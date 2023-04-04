@@ -1,7 +1,6 @@
 {
 	"name": "MS SQL",
-	"dockerComposeFile": "docker-compose.yml",
-	"service": "app",
+	"dockerComposeFile": "docker-compose.yml",	
 	"workspaceFolder": "/workspace",
 
 	// Configure tool-specific properties.
