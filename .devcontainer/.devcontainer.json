@@ -1,0 +1,6 @@
+{
+    "name": "SQL Server",
+    "dockerFile": "Dockerfile",
+    "extensions": [],
+    "forwardPorts": [1433]
+}
