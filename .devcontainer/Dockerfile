@@ -1,6 +1,7 @@
-FROM mcr.microsoft.com/mssql/server:2019-latest
+# Install SQL Tools: SQLPackage and sqlcmd
+COPY mssql/installSQLtools.sh installSQLtools.sh
+RUN bash ./installSQLtools.sh \
+     && apt-get clean -y && rm -rf /var/lib/apt/lists/* /tmp/library-scripts
+     
 
-ENV ACCEPT_EULA=Y \
-    SA_PASSWORD=P@ssw0rd
 
-EXPOSE 1433
